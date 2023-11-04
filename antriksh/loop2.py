@@ -20,6 +20,7 @@ with open("2.csv","r") as dataframe:
         color = 'rgb(256, 256, 256)'  # black color
         # font = ImageFont.load_default()
         draw.text((x, y), name, fill=color, font=font)
+        image.paste(code128.image(line[0]), (0, 0))
 
         image.save(str(line[0]) + '.png')
 
