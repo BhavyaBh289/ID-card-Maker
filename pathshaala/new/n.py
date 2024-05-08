@@ -50,10 +50,12 @@ draw.text((x, y), classs, fill=color, font=font)
 # save the edited image
 
 image.save(str(roll) + '.png')
-
-# til = Image.open(roll + '.png')
-# til.paste(code128.image(roll), (650, 440))
-# til.save(roll + '.png')
+import qrcode
+img = qrcode.make(roll)
+img = img.resize((200, 200), Image.Resampling.LANCZOS)
+til = Image.open(roll + '.png')
+til.paste(img, (200, 810))
+til.save(roll + '.png')
 
 
 
