@@ -40,6 +40,10 @@ for i, line in enumerate(lines):
         if re.findall(r'\b\d{10,11}\b', line ):
             current_entry.append(re.findall(r'\b\d{10,11}\b', line ))
             Address.append(re.sub(r'\b\d{10,11}\b', '', line))
+        else:
+            if(len(line.strip())>3):
+                Address.append(line)
+                current_entry.append(" ")
     # if t==0:
     #     current_entry.append(line.strip())
     #     t=1

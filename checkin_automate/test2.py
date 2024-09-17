@@ -27,5 +27,5 @@ for i in(t):
     pyautogui.click()
     time.sleep(2)
 
-    pyautogui.moveTo(215,593,0)
+    pyautogui.moveTo(215,553,0)
     pyautogui.click()
