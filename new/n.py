@@ -8,8 +8,9 @@ from PIL import Image, ImageDraw, ImageFont
 # number= "9373758911"
 # roll= "24V001"
 # classs= "1"
-with open("2.csv","r") as dataframe:
+with open("3.csv","r") as dataframe:
     data = csv.reader(dataframe)
+    print (data)
     for line in data :
         n1=line[1]
         n2=line[2]
