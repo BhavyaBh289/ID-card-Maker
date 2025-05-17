@@ -6,3 +6,4 @@
 *.pdf
 *.tar.gz
 venv
+*.ttf
