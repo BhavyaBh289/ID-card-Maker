@@ -19,7 +19,6 @@ with open("2.csv","r") as dataframe:
         name = first[0].upper() + first[1:].lower() + " " + last[0].upper() + last[1:].lower()
         number = line[3]
         roll = line[0]
-        classs = line[4]
         print(name,number,roll)
         image = Image.open("1.jpg")
         draw = ImageDraw.Draw(image)
